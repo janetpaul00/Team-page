@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,600);
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700);
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "PT Serif", system-ui;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: -0.1rem;
+}
+
+h2 {
+  font-family: "Poppins", system-ui;
+  font-size: 1.25rem;
+}
+
+footer {
+  font-family: system-ui;
+  font-size: 0.8rem;
+  color: #a9a9a9;
+}
+
+#username {
+  font-weight: bold;
+  text-decoration: dashed;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0.2px;
+  text-underline-offset: 2px;
+}
