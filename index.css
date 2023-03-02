@@ -1,8 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:regular,700);
-@import url(https://fonts.googleapis.com/css?family=Poppins:regular,600);
-@import url(https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,400);
+
 * {
   box-sizing: border-box;
+  margin-inline: 4px;
 }
 
 h1 {
@@ -21,6 +22,11 @@ footer {
   font-family: system-ui;
   font-size: 0.8rem;
   color: #a9a9a9;
+  position: absolute;
+  bottom: 25px;
+  /* left: 50%;
+  right: 50%;
+  overflow: visible; */
 }
 
 #username {
@@ -30,4 +36,21 @@ footer {
   text-decoration-style: solid;
   text-decoration-thickness: 0.2px;
   text-underline-offset: 2px;
+}
+
+p {
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.team-wrapper {
+  display: flex;
+}
+
+.content-box {
+  width: 200px;
+  height: 150px;
+  background-color: red;
 }
