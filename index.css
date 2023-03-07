@@ -63,7 +63,7 @@ p {
   flex-wrap: wrap;
   /* column-gap: 10px; */
   flex: 1;
-  outline: 10px solid gray;
+  /* outline: 10px solid gray; */
   row-gap: 20px;
 }
 
@@ -85,7 +85,7 @@ p {
 
 .name {
   padding-block: 0;
-
+  padding-top: 10px;
   margin: 0;
 }
 
