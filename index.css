@@ -69,12 +69,12 @@ p {
 
 .content-box {
   width: calc(50% - 10px);
-  height: ;
+  position: relative;
   background-color: lightpink;
 }
 
 .photo {
-  max-width: 70%;
+  max-width: 80%;
   height: 100%;
 }
 
@@ -86,10 +86,16 @@ p {
 .name {
   padding-block: 0;
   padding-top: 10px;
+
   margin: 0;
 }
 
 .role {
   padding: 0;
   margin: 0;
+  position: absolute;
+
+  /* bottom: 150px;
+  left: 40%; */
+  rotate: 90deg;
 }
