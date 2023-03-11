@@ -7,6 +7,11 @@
   padding: 0;
 }
 
+body {
+  min-height: 100vh;
+  padding-inline: 15px;
+}
+
 h1 {
   font-family: "PT Serif", system-ui;
   font-weight: 600;
@@ -41,23 +46,20 @@ footer {
   text-underline-offset: 2px;
 }
 
-p {
+.description {
   font-family: system-ui, -apple-system, sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-bottom: 60px;
+  max-width: 400px;
 }
 
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  padding-inline: 15px;
-  min-height: 100vh;
+.head-wrapper > * {
+  outline: 2px solid black;
 }
 
 .team-wrapper {
+  padding-top: 50px;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -65,13 +67,13 @@ p {
   /* column-gap: 10px; */
   flex: 1;
   /* outline: 10px solid gray; */
-  row-gap: 20px;l
+  row-gap: 20px;
 }
 
 .content-box {
-  width: calc(50% - 10px);
+  /* width: calc(50% - 10px); */
+  max-width: 50%;
   position: relative;
-  
 }
 
 .photo {
@@ -81,7 +83,7 @@ p {
 
 .content-box:nth-child(even) {
   /* outline: 2px solid red; */
-  margin-top: 40px; 
+  margin-top: 15%;
 }
 
 .name {
@@ -95,7 +97,7 @@ p {
 
 .role {
   font-family: "PT Serif", system-ui;
-  font-size: small;
+  font-size: 2rem;
   font-weight: 400;
   padding: 0;
   margin: 0;
@@ -106,4 +108,30 @@ p {
   color: black;
   font-size: 10px;
   min-width: max-content;
+}
+
+@media (width>600px) {
+  body {
+    background-color: burlywood;
+  }
+
+  .container {
+    background-color: pink;
+    margin-inline: 10%;
+  }
+
+  .head-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    justify-content: flex-start;
+  }
+
+  .intro {
+    flex: 1;
+  }
+
+  h1 {
+    flex: 1;
+  }
 }
