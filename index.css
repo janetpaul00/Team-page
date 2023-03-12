@@ -32,7 +32,7 @@ footer {
   font-family: system-ui;
   font-size: 0.8rem;
   color: #a9a9a9;
-  padding-top: 20px;
+  padding-top: 120px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -65,30 +65,29 @@ footer {
   flex-wrap: wrap;
   /* column-gap: 10px; */
   flex: 1;
-  row-gap: 20px;
+  row-gap: 19px;
+  column-gap: 1px;
 }
 
 .content-box {
-  /* width: calc(50% - 10px); */
-  /* outline: 3px solid red; */
-  max-width: 50%;
-  position: relative;
+  width: calc(50% - 10px);
+  display: flex;
+  column-gap: 0.5rem;
 }
 
 .photo {
-  max-width: 85%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .content-box:nth-child(even) {
-  /* outline: 2px solid red; */
   margin-top: 15%;
 }
 
 .name {
   font-family: "Poppins", system-ui;
   font-size: medium;
-  padding-block: 0;
+  /* padding-block: 0; */
   padding-top: 10px;
   font-weight: 600;
   margin: 0;
@@ -98,11 +97,7 @@ footer {
   font-family: "PT Serif", system-ui;
   font-size: 2rem;
   font-weight: 400;
-  padding: 0;
   margin: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
   writing-mode: vertical-rl;
   color: black;
   font-size: 10px;
@@ -116,7 +111,7 @@ footer {
 
   .container {
     /* background-color: pink; */
-    margin-inline: 10%;
+    margin-inline: 15%;
   }
 
   .head-wrapper {
@@ -145,11 +140,6 @@ footer {
 
   .team-wrapper {
     /* background-color: white; */
-  }
-
-  .photo {
-    max-width: 70%;
-    height: 100%;
   }
 
   .content-box:nth-child(even) {
